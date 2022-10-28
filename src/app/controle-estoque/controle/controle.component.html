@@ -1,0 +1,38 @@
+<section>
+  <h1>Cadastrar Produto</h1>
+
+  <form [formGroup]="controleForm" (submit)="cadastrarProduto()">
+     <mat-form-field appearance="fill">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Id" formControlName="inputId" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Nome da Produto</mat-label>
+      <input matInput placeholder="Nome" formControlName="inputNome" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Quantidade</mat-label>
+      <input matInput placeholder="Quantidade" formControlName="inputQuantidadeProduto" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Fornecedor</mat-label>
+      <input matInput placeholder="Fornecedor" formControlName="inputFornecedor" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Validade</mat-label>
+      <input matInput placeholder="Validade" formControlName="inputValidade" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Categoria</mat-label>
+      <input matInput placeholder="Categoria" formControlName="inputCategoria" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Cadastrar</button>
+  </form>
+</section>
+<section>
+  <!-- <p>{{getNome.value}}</p>
+  <p>{{getQuantidadeProduto.value}}</p>
+  <p>{{getFornecedor.value}}</p>
+  <p>{{getValidade.value}}</p>
+  <p>{{getCategoria.value}}</p> -->
+</section>
